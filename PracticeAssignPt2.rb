@@ -39,10 +39,11 @@ puts odd_or_even 5
 
 def odd_or_even 
     lambda do |x|
-        if x.even?
-            "Integer is even. "
-        else
-            'Integer is odd. '
+        while power.!= 0
+            ans = number ** power
+            power -= 1
+            print ans, "\n"
+            break
         end
     end
 end
@@ -59,7 +60,7 @@ puts p.call 4
 # 8. Write the code to execute the code block contained in p for an odd integer
 # and output the code block's return.
 
-puts p.call 5
+puts p.call 4
 
 # 9. Who created the Ruby programming language?
 
