@@ -5,6 +5,8 @@ puts x.<5
 puts x.<=4
 puts x.>4
 
+puts x.class
+
 # True and false are even objects.
 
 puts true.class
