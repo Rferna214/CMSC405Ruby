@@ -9,7 +9,7 @@
 # 2 to the 5th power is 2 * 2 * 2 * 2 * 2
 
 number = 2
-power = 3
+power = 4
 ans = 0
 while power.!= 0
     ans = number ** power
@@ -45,8 +45,8 @@ puts gen_power 4, 2
 # must have two integer input parameters; the first must contain the number 
 # and the second must contain the power.
 
-def gen_power number 
-    lambda do |power|
+def gen_power  
+    lambda do |number, power|
     while power.!= 0
         ans = number ** power
         power -= 1
@@ -58,11 +58,11 @@ end
 
 # 5. Write the code to call the gen_power function and store the code 
 # block it returns in a variable named p.
-p = gen_power 4
+p = gen_power 
 
 # 6. Write the code to execute the code block contained in p 
 # and output the code block's return.
-puts p.call 3
+puts p.call 3 , 4
 
 # 7. Explain how you interacted with the Ruby programming language? Your
 # response to this question must be at least 1 full paragraph (50 words).
